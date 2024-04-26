@@ -10,3 +10,21 @@
     --paragraph-font: "Source Code Pro", monospace;
     --nav-font: "GFS Neohellenic", sans-serif;
 }
+
+aside{grid-area: aside;}
+main{grid-area: main;}
+
+.hero{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'aside main main main main main';
+}
+
+aside{
+    background: cadetblue;
+}
+
+main{
+    background-color: forestgreen;
+}
