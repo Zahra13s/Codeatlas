@@ -23,6 +23,7 @@
 }
 
 .main{
+    margin-left: 2px;
     margin: 30px;
     padding: 20px;
     border-radius: 20px;
@@ -30,19 +31,22 @@
 }
 
 .admin_img1 {
-    width: 100%;
-    
+   
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 } 
-
-.img-container{
-    padding-left: 0;
-    margin-left: 0;
-}
 
 form{
     width: 90%;
     margin: 0 auto;  
 }
+
+form input::placeholder {
+    color: #5B598C !important;
+   
+}
+
 
 
 
