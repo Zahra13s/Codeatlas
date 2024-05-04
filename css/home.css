@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --title-font: "Montserrat", sans-serif;
+  --paragraph-font: "Source Code Pro", monospace;
+  --nav-font: "GFS Neohellenic", sans-serif;
+  --textColor: white;
+  --input-color: #5b598c75;
+  --primary-bg: #21203a;
+  --secondary-bg: #272640;
+  --card-bg: #00000015;
+  --border-color: #444278;
+  --box-shadow: 1px 1px 10px rgba(91, 89, 140, 0.5);
+  -moz-box-shadow: 1px 1px 10px rgba(91, 89, 140, 0.5);
+  box-shadow: 1px 1px 10px rgba(91, 89, 140, 0.5);
+}
+
+.body {
+  background-color: var(--primary-bg);
+  color: white;
+  display: grid;
+  grid-template-columns: 250px 20px 1fr 50px;
+  grid-area: auto;
+  grid-template-areas: "side_nav sidebar_toggle main achievement";
+}
+
+aside {
+  grid-area: side_nav;
+  height: 100vh;
+  background-color: var(--secondary-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar_toggle {
+  grid-area: sidebar_toggle;
+  transition: 1s;
+}
+
+main {
+  grid-area: main;
+}
+
+.achievement {
+  grid-area: achievement;
+  background-color: var(--secondary-bg);
+}
+
+
+.stick {
+  width: 5px;
+  height: 15px;
+  background-color: black;
+  margin-left: 8px;
+  transition: 1s;
+}
+
+.sidebar_toggle:hover{
+    .stick{
+        width: 12px;
+        height: 12px;
+        float: left;
+        box-shadow: -3px 3px 0 black;
+        transform: rotate(-135deg);
+        background-color: transparent;
+    }
+}
+
+.premium {
+  padding: 7px 10px;
+  background-color: transparent;
+  color: var(--textColor);
+  border-radius: 7px;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+}
+
+.nav-items {
+  margin-top: -100px;
+}
