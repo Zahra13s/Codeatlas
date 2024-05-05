@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="../css/home.css">
-    <!-- javascript -->
-    <script src="../Js/app.js"></script>
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -21,8 +19,9 @@
     <title>Document</title>
 </head>
 
-<body class="body">
-    <aside>
+<body class="body" id="body">
+
+    <aside id="side_nav">
 
         <div class="container-fluid">
             <img src="../images/footer-logo.png" alt="" class="w-100">
@@ -94,16 +93,62 @@
         </div>
 
     </aside>
-    <section class="sidebar_toggle d-flex">
-        <span class="stick align-self-center"></span>
+
+    <section class="sidebar_toggle d-flex" >
+        <div class="arrow" id="arrow" >
+            <div class="top"></div>
+            <div class="btm"></div>
+        </div>
     </section>
 
-    <main>
-          c
+    <main id="main">
+        <div class="row d-flex">
+            <div class="col-4">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-10">
+                            <h5>15 July, 2024</h5>
+                        </div>
+                        <div class="col-2">
+                            <img src="../images/dots.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row text-center">
+                        <h3>HTML</h3>
+                        <p>Lessons</p>
+                    </div>
 
+                    <div class="row px-3">
+                        <p>Progress</p>
+                        <div class="progress">
+                            <div class="progress-bar"  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div>
+                          </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6">
+
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-dark text-white">3 weeks left</button>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
     </main>
 
-    <section class="achievement">
+    <section class="achievement" id="achievement">
         <div class="container-fluid">
             <div class="row mb-3 mt-2">
                 <img src="../images/person.png" alt="" class="w-100 p-2">
@@ -120,5 +165,5 @@
         </div>
     </section>
 </body>
-
+<script src="../Js/home.js"></script>
 </html>

@@ -42,6 +42,9 @@ aside {
 .sidebar_toggle {
   grid-area: sidebar_toggle;
   transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -84,4 +87,45 @@ main {
 
 .nav-items {
   margin-top: -100px;
+}
+
+.top,
+.btm{
+    width: 3px; 
+    height: 10px; 
+    display: inline-block; 
+    background-color: var(--textColor);
+    transition: 0.5s;
+}
+
+.top{
+  border-radius: 5px 15px 15px 15px;
+}
+
+.btm{
+    border-radius: 15px 15px 15px 5px;
+    margin-top: -3.5px;
+}
+
+.arrow{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.arrow:hover{
+.top{
+    transform:rotate(30deg); 
+    -ms-transform:rotate(30deg);
+}
+
+.btm{
+    transform:rotate(-30deg); 
+    -ms-transform:rotate(-30deg);
+}
+}
+
+.card{
+  background-color: #00000050 !important;
+  color: var(--textColor)!important;
 }
