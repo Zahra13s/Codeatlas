@@ -26,7 +26,7 @@
   color: white;
   display: grid;
   grid-template-columns: 250px 20px 1fr 50px;
-  grid-area: auto;
+  grid-template-rows: auto;
   grid-template-areas: "side_nav sidebar_toggle main achievement";
 }
 
