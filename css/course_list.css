@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-font: "Montserrat", sans-serif;
+    --paragraph-font: "Source Code Pro", monospace;
+    --nav-font: "GFS Neohellenic", sans-serif;
+    --textColor: white;
+    --input-color: #5b598c75;
+    --primary-bg: #21203a;
+    --secondary-bg: #272640;
+    --card-bg: #00000015;
+    --border-color: #444278;
+    --box-shadow: 1px 1px 10px rgba(91, 89, 140, 0.5);
+    -moz-box-shadow: 1px 1px 10px rgba(91, 89, 140, 0.5);
+    box-shadow: 1px 1px 10px rgba(91, 89, 140, 0.5);
+}
+
+.body{
+    background-color: var(--primary-bg);
+    color: white;
+    display: grid;
+    grid-template-columns: 250px 20px 1fr 50px;
+    grid-template-rows: auto;
+    grid-template-areas: "side_nav sidebar_toggle main achievement";
+}
+
+/* Side navbar */
+aside{
+    grid-area: side_nav;
+    height: 100vh;
+    background-color: var(--secondary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.premium {
+    padding: 7px 10px;
+    background-color: transparent;
+    color: var(--textColor);
+    border-radius: 7px;
+    border: 2px solid var(--border-color);
+    box-shadow: var(--box-shadow);
+}
+
+.nav-items {
+    margin-top: -100px;
+}
+
+/* Main */
+main{
+    grid-area: main;
+}
+
+.search-bar{
+    background-color: var(--secondary-bg);
+    border: none;
+    color: var(--input-color);
+    font-family: var(--nav-font);
+    font-style: bold;
+    
+}
+
+.search-bar::placeholder {
+    color: var(--input-color);
+}
+
+input[type=text]:focus {
+    background-color: var(--secondary-bg);
+    color: var(--input-color);
+
+}
+
+.course-card{
+    border-radius: 20px;
+    background-color: #1C1B31;
+    box-shadow: var(--box-shadow);
+}
+
+.date, 
+.description{
+    font-family: var(--paragraph-font);
+}
+
+.course-card h3{
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
