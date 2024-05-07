@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --title-font: "Montserrat", sans-serif;
+    --paragraph-font: "Source Code Pro", monospace;
+    --nav-font: "GFS Neohellenic", sans-serif;
+    --textColor:white;
+
+}
+
+.loginBox{
+    max-width: 900px;
+    max-height: 1200px;
+    font-family: var(--title-font);
+    display: flex;
+    margin: 3rem auto;
+    background-color: #1C1B31;
+    color: var(--textColor);
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgba(91, 89, 140,0.5) ;
+}
+
+form{
+    margin: 0 3rem;
+}
+
+
+.loginBox .leftContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    max-height: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--paragraph-font);
+    
+}
+
+.leftContainer h3{
+    font-weight: bold;
+}
+
+.leftContainer .name,
+.leftContainer .password{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.name label,
+.password label{
+    color: hsla(53, 15%, 89%, 0.945);
+    font-size: 15px;
+
+}
+
+.name input,
+.password input,
+.confrimPass input{
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    padding: 5px 10px;
+    background-color: rgba(39, 38, 64, 0.772);
+    border: none;
+
+}
+
+::placeholder {
+  color: whitesmoke;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: whitesmoke;
+}
+
+.leftContainer .alreadyAcc{
+    margin-top: 12px;
+   text-align: right;
+   font-size: 12px;
+   font-style: italic;
+}
+
+.logInbtn{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-color: #282744;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.logInbtn:hover{
+    background-color: #3e3c72;
+    color: white;
+}

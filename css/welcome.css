@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --title-font: "Montserrat", sans-serif;
+    --paragraph-font: "Source Code Pro", monospace;
+    --nav-font: "GFS Neohellenic", sans-serif;
+    --textColor:white;
+    --navColor:#272640;
+    --bgcolor:#282744;
+}
+
+body{
+    background-color: var(--bgcolor);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navColor);
+    font-family: var(--nav-font);
+    padding: 5px 15px;
+}
+
+.header .logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+
+.navbar .list ul{
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+}
+
+.navbar .list ul li{
+    padding: 10px;
+    transition: 0.6s;
+}
+
+.navbar .list ul li:hover{
+    background-color: var(--navColor);
+    color: #7676f2;
+    font-weight: bold;
+
+}
+
+.navbar .navBtn button{
+    width: 90px;
+    height: 35px;
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: var(--nav-font);
+    font-size: 1.5rem;
+    border: 2px solid #444278;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+
+.navbar .navBtn .logInBtn:hover,
+.navbar .navBtn .signUpBtn:hover{
+    background-color: #3e3c72;
+    color: white;
+}
+
+/* ========Main Content=========== */
+
+.main{
+    max-width: 1300px;
+    max-height: 900px;
+    margin: 0 auto;
+}
+
+.main .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.container .rightContainer{
+    border-radius: 15px;
+}
+
+.container .rightContainer img{
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+}
+
+
+.main .container .leftContainer{
+    max-width: 500px;
+    padding: 20px;
+}
+
+.main .container .leftContainer h1,
+.main .container .leftContainer p{
+    margin: 15px 0;
+    color: white;
+    font-family: var(--title-font);
+}
+.main .container .leftContainer h1{
+    font-size: 3rem;
+    text-shadow: 4px 3px 7px #5e5ad8;
+}
+
+.main .container .leftContainer p{
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    letter-spacing: -1px;
+}
+
+
+
+
+
