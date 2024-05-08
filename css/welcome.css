@@ -15,7 +15,7 @@
     --bgcolor:#282744;
 }
 
-body{
+.body{
     background-color: var(--bgcolor);
 }
 .header{
@@ -57,6 +57,12 @@ body{
     color: #7676f2;
     font-weight: bold;
 
+}
+
+.navbar .navBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
 
 .navbar .navBtn button{
@@ -122,6 +128,20 @@ body{
     font-size: 20px;
     font-family: var(--paragraph-font);
     letter-spacing: -1px;
+}
+
+
+/* Contact Us */
+.sub-card{
+    background-color: #1C1B31;
+}
+
+.contact{
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5, h6, .send-btn {
+    font-family: var(--title-font);
 }
 
 
