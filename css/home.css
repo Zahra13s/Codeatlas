@@ -129,3 +129,13 @@ main {
   background-color: #00000050 !important;
   color: var(--textColor)!important;
 }
+
+button{
+  background-color: transparent!important;
+  border: 2px solid var(--border-color)!important;
+}
+
+.progress {
+  height: 5px!important;
+}
+
