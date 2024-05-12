@@ -190,6 +190,29 @@
     font-family: var(--nav-font);
 }
 
+/* Why should you choose us */
+.chooseUs{
+    background-color:var(--navColor) ;
+    padding: 10px 5px;
+    color: white;
+    margin: 20px 0;
+}
+
+.chooseUs .tanker{
+    width: 600px;
+    margin: 20px auto;
+}
+
+.chooseUs .tanker h1{
+    text-align: center;
+}
+
+.chooseUs .tanker p{
+    font-size: 25px;
+    text-align:center;
+    font-family: var(--nav-font);
+}
+
 
 
 
@@ -225,4 +248,19 @@ h1, h2, h3, h4, h5, h6, .send-btn {
     font-weight: bold;
     font-family: var(--title-font);
 }
+
+.chooseUs .tanker button{
+    margin: 0 auto;
+    display: block;
+    width: 170 px;
+    height: 40px;
+    background-color: #5e5ad8;
+    color: whitesmoke;
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
 
