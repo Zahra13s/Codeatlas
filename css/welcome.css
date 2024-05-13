@@ -213,7 +213,19 @@
     font-family: var(--nav-font);
 }
 
+/* Testiminials */
+.testimonial{
+    color: white;
+}
 
+.testimonial .card{
+    color: white;
+    background-color: var(--cardcolor);
+}
+
+.testimonial p{
+    font-family: var(--paragraph-font);
+}
 
 
 /* Contact Us */

@@ -21,7 +21,7 @@
     box-shadow: 1px 1px 10px rgba(91, 89, 140, 0.5);
 }
 
-.body{
+.body {
     background-color: var(--primary-bg);
     color: white;
     display: grid;
@@ -31,7 +31,7 @@
 }
 
 /* Side navbar */
-aside{
+aside {
     grid-area: side_nav;
     height: 100vh;
     background-color: var(--secondary-bg);
@@ -54,17 +54,17 @@ aside{
 }
 
 /* Main */
-main{
+main {
     grid-area: main;
 }
 
-.search-bar{
+.search-bar {
     background-color: var(--secondary-bg);
     border: none;
     color: var(--input-color);
     font-family: var(--nav-font);
     font-style: bold;
-    
+
 }
 
 .search-bar::placeholder {
@@ -77,18 +77,18 @@ input[type=text]:focus {
 
 }
 
-.course-card{
+.course-card {
     border-radius: 20px;
     background-color: #1C1B31;
     box-shadow: var(--box-shadow);
 }
 
-.date, 
-.description{
+.date,
+.description {
     font-family: var(--paragraph-font);
 }
 
-.course-card h3{
+.course-card h3 {
     font-family: var(--title-font);
     font-weight: bold;
 }
@@ -98,11 +98,3 @@ input[type=text]:focus {
     grid-area: achievement;
     background-color: var(--secondary-bg);
 }
-
-
-
-
-
-
-
-
