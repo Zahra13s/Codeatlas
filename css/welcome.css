@@ -11,7 +11,7 @@
     --paragraph-font: "Source Code Pro", monospace;
     --nav-font: "GFS Neohellenic", sans-serif;
     --textColor:white;
-    --navColor:#272640;
+    --navColor:#25243f;
     --bgcolor:#282744;
     --cardcolor:#1C1B31;
 }
@@ -24,7 +24,13 @@
     justify-content: space-between;
     background-color: var(--navColor);
     font-family: var(--nav-font);
-    padding: 5px 15px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 .header .logo img{
@@ -46,10 +52,12 @@
     display: flex;
     list-style: none;
     margin-right: 25px;
+    padding: 0;
 }
 
 .navbar .list ul li{
     padding: 10px;
+    padding-top: 25px;
     transition: 0.6s;
 }
 
@@ -60,22 +68,27 @@
 
 }
 
+.navbar .list{
+    display: flex;
+    justify-content: cneter;
+    align-items: center;
+}
+
 .navbar .navBtn{
     display: flex;
     justify-content: center;
     align-items: center;   
+    
 }
 
 .navbar .navBtn button{
-    width: 90px;
-    height: 35px;
     background-color: transparent;
     color: whitesmoke;
     font-family: var(--nav-font);
-    font-size: 1.5rem;
     border: 2px solid #444278;
-    margin: 0 5px;
     border-radius: 15px;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
 
 .navbar .navBtn .logInBtn:hover,

@@ -20,7 +20,8 @@
       "default",
       {
         "button-name": "off",
-        "input-button-name": "off"
+        "input-button-name": "off",
+        "link-name": "off"
       }
     ],
     "button-type": "off",

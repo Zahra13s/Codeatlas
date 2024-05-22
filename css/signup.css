@@ -25,6 +25,7 @@
 
 .loginBox{
     width: 75vw;
+    margin: 20px;
     font-family: var(--title-font);
     display: flex;
     background-color: #1C1B31;
@@ -61,7 +62,8 @@ form{
 }
 
 .leftContainer .name,
-.leftContainer .password{
+.leftContainer .password,
+.leftContainer .confrimPass{
     display: flex;
     flex-direction: column;
     margin: 15px 0;
@@ -97,9 +99,9 @@ form{
 
 .leftContainer .alreadyAcc{
     margin-top: 12px;
-   text-align: right;
-   font-size: 12px;
-   font-style: italic;
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
 }
 
 .logInbtn{
@@ -117,4 +119,14 @@ form{
 .logInbtn:hover{
     background-color: #3e3c72;
     color: white;
+}
+
+.signup-img{
+    border-radius: 10px 0 0 10px;
+    width: 100%;  
+    
+}
+
+.rightContainer{
+    overflow: hidden;
 }

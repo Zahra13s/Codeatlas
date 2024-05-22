@@ -17,6 +17,7 @@
 
 .body{
     background-color: var(--primary-bg);
+    height: 100vh;
 }
 
 .loginBox{
@@ -103,4 +104,14 @@
 .logInbtn:hover{
     background-color: #3e3c72;
     color: white;
+}
+
+.login-img {
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+
+}
+
+.rightContainer {
+    overflow: hidden;
 }
