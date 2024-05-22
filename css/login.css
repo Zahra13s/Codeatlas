@@ -7,11 +7,16 @@
 }
 
 :root{
+    --primary-bg: #21203a;
     --title-font: "Montserrat", sans-serif;
     --paragraph-font: "Source Code Pro", monospace;
     --nav-font: "GFS Neohellenic", sans-serif;
     --textColor:white;
 
+}
+
+.body{
+    background-color: var(--primary-bg);
 }
 
 .loginBox{

@@ -7,6 +7,7 @@
 }
 
 :root{
+    --primary-bg: #21203a;
     --title-font: "Montserrat", sans-serif;
     --paragraph-font: "Source Code Pro", monospace;
     --nav-font: "GFS Neohellenic", sans-serif;
@@ -14,27 +15,34 @@
 
 }
 
+.body{
+    height: 100vh;
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .loginBox{
-    max-width: 900px;
-    max-height: 1200px;
+    width: 75vw;
     font-family: var(--title-font);
     display: flex;
-    margin: 3rem auto;
     background-color: #1C1B31;
     color: var(--textColor);
     border-radius: 10px;
-    box-shadow: 5px 5px 7px rgba(91, 89, 140,0.5) ;
+    box-shadow: 3px 3px 10px rgba(91, 89, 140,0.5) ;
 }
-
+/* 
 form{
     margin: 0 3rem;
-}
+} */
 
 
 .loginBox .leftContainer{
+    flex: 1;
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    /* max-width: 800px; */
     max-height: 1000px;
     margin: 0 auto;
     align-items: center;
@@ -42,6 +50,11 @@ form{
     font-family: var(--paragraph-font);
     
 }
+
+.loginBox .rightContainer{
+    flex: 1;
+}
+
 
 .leftContainer h3{
     font-weight: bold;
